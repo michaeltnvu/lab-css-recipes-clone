@@ -5,11 +5,22 @@ html {
   font-size: 16px;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
   margin: 0;
   padding: 0;
   font-weight: lighter;
@@ -22,3 +33,110 @@ body {
 
 /* STYLES */
 /* Write your CSS below */
+
+/* HEADER SECTION */
+html {
+  scroll-behavior: smooth;
+}
+
+.header {
+  background: url("../images/apple-pie.jpg") no-repeat center;
+  background-size: cover;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header h1 {
+  font-size: 3rem;
+  color: white;
+  letter-spacing: 1.5px;
+}
+
+h3 {
+  padding: 25px 0;
+}
+
+/* BODY SECTIONS */
+
+section,
+hr {
+  display: block;
+  margin: 0 auto;
+  width: 60vw;
+}
+
+hr {
+  border: none;
+  height: 1.5px;
+  background-color: lightgray;
+}
+
+.introduction {
+  padding-top: 80px;
+}
+
+.introduction p {
+  font-size: 1.2em;
+}
+
+.directions {
+  padding-bottom: 80px;
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.images img {
+  max-width: 100%;
+  height: auto;
+  padding: 25px;
+}
+
+body {
+  line-height: 1.5em;
+}
+
+/* STYLING LIST ITEMS */
+
+ul {
+  margin: 0;
+}
+
+.dashed {
+  list-style-type: none;
+}
+
+.dashed > li {
+  margin-left: 15px;
+}
+
+.dashed > li:before {
+  content: "- ";
+}
+
+ol {
+  counter-reset: list;
+  width: 90%;
+}
+
+ol > li {
+  list-style: none;
+  margin-left: 15px;
+}
+
+ol > li:before {
+  content: counter(list) ") ";
+  counter-increment: list;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  font-size: 12px;
+}
